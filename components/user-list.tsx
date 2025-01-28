@@ -20,7 +20,11 @@ export function UserList() {
       try {
         setIsLoading(true)
         setError(null)
-        const response = await fetch("https://6752d87bf3754fcea7b9cea0.mockapi.io/users")
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL
+        if (!apiUrl) {
+          throw new Error('API URL is not defined')
+        }
+        const response = await fetch(apiUrl)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
@@ -58,7 +62,7 @@ export function UserList() {
                 <CardContent className="flex items-center p-4">
                   <Avatar className="h-10 w-10 mr-3">
                     <AvatarImage src={user.avatar} alt={user.name} />
-                    <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
+                    <AvatarFallback className="bg-lightpurple">{user.name.charAt(0)}</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col overflow-hidden">
                     <p className="font-medium text-white text-sm truncate">{user.name}</p>

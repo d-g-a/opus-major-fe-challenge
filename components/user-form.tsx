@@ -27,7 +27,11 @@ export function UserForm() {
     setError(null)
 
     try {
-      const response = await fetch("https://6752d87bf3754fcea7b9cea0.mockapi.io/users", {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL
+      if (!apiUrl) {
+        throw new Error('API URL is not defined')
+      }
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
