@@ -2,14 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'standalone',
-  experimental: {
-    // serverActions removed as it's no longer a valid experimental option
-  },
+  output: 'export',
   pageExtensions: ["js", "jsx", "ts", "tsx"],
   images: {
+    unoptimized: true,
     domains: ['6752d87bf3754fcea7b9cea0.mockapi.io']
   }
+  
 };
 
 export default nextConfig;
