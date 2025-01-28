@@ -50,8 +50,8 @@ export function UserForm() {
       setName("")
       setAvatar("")
       setTimeout(() => {
-        router.push("/user-list")
-      }, 2000)
+        router.push("/dashboard/user-list")
+      }, 1800)
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to add user. Please try again.")
       console.error("Error adding user:", err)
