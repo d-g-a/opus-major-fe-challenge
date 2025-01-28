@@ -1,21 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Light theme variables */
+    --background: rgb(248, 246, 233);
+    --foreground: rgb(16, 20, 29);
+
+    --card: rgb(248, 246, 233);
+    --card-foreground: rgb(16, 20, 29);
+
+    --popover: rgb(248, 246, 233);
+    --popover-foreground: rgb(16, 20, 29);
+
+    --primary: rgb(16, 20, 29);
+    --primary-foreground: rgb(248, 246, 233);
+
+    --secondary: rgb(220, 220, 220);
+    --secondary-foreground: rgb(16, 20, 29);
+
+    --muted: rgb(220, 220, 220);
+    --muted-foreground: rgb(39, 39, 42);
+
+    --accent: rgb(220, 220, 220);
+    --accent-foreground: rgb(16, 20, 29);
+
+    --destructive: hsl(0, 100%, 50%);
+    --destructive-foreground: rgb(248, 246, 233);
+
+    --border: hsl(214.3, 31.8%, 91.4%);
+    --input: hsl(214.3, 31.8%, 91.4%);
+    --ring: rgb(16, 20, 29);
+
+    --radius: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: rgb(16, 20, 29);
+      --foreground: rgb(248, 246, 233);
+
+      --card: rgb(16, 20, 29);
+      --card-foreground: rgb(248, 246, 233);
+
+      --popover: rgb(16, 20, 29);
+      --popover-foreground: rgb(248, 246, 233);
+
+      --primary: rgb(248, 246, 233);
+      --primary-foreground: rgb(16, 20, 29);
+
+      --secondary: rgb(39, 39, 42);
+      --secondary-foreground: rgb(248, 246, 233);
+
+      --muted: rgb(39, 39, 42);
+      --muted-foreground: rgb(220, 220, 220);
+
+      --accent: rgb(39, 39, 42);
+      --accent-foreground: rgb(248, 246, 233);
+
+      --destructive: hsl(0, 100%, 50%);
+      --destructive-foreground: rgb(248, 246, 233);
+
+      --border: hsl(216, 34%, 17%);
+      --input: hsl(216, 34%, 17%);
+      --ring: rgb(248, 246, 233);
+    }
   }
 }
 
+@layer base {
+  * {
+    /* border-border removed */
+  }
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+}
+
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+#__next {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
