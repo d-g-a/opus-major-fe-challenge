@@ -4,13 +4,13 @@ Thank you for your time.
 
 ## Deployed on Vercel
 
-Access the site in this url: https://opus-major-fe-challenge.vercel.app/
+Access the site in this url: https://opus-major-fe-challenge.vercel.app
 
 ## Things to know
 
 - Sounds play when you click on the page.
 
-- As the user creation with the api provided is not much, I used a math.random to generate a random number of users created per minute. 
+- As the user creation with the api provided is not very busy, I used a math.random to generate a random number of users created per minute.* 
 
 ## or run locally
 
