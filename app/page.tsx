@@ -16,7 +16,6 @@ export default function LandingPage() {
     playWelcomeSound('sound3')
   }
 
-  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4">
       <div className="text-center max-w-md w-full relative z-10">

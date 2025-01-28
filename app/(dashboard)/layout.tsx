@@ -1,11 +1,8 @@
 "use client"
-
 import { Navigation } from "@/components/navigation"
 import { Card } from "@/components/ui/card"
 import { AnimatedOmSymbol } from "@/components/animated-om-symbol"
 import { Footer } from "@/components/footer"
-
-
 
 export default function DashboardLayout({
   children,
