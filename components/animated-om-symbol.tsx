@@ -46,13 +46,11 @@ export function AnimatedOmSymbol() {
         >
           <motion.div
             whileHover={{
-              animate: {
-                filter: [
-                  "drop-shadow(0 0 15px rgba(255,215,0,0.3))",
-                  "drop-shadow(0 0 30px rgba(255,215,0,0.6))",
-                  "drop-shadow(0 0 15px rgba(255,215,0,0.3))",
-                ],
-              },
+              filter: [
+                "drop-shadow(0 0 15px rgba(255,215,0,0.3))",
+                "drop-shadow(0 0 30px rgba(255,215,0,0.6))",
+                "drop-shadow(0 0 15px rgba(255,215,0,0.3))",
+              ],
               transition: {
                 duration: 2,
                 repeat: Number.POSITIVE_INFINITY,
