@@ -170,27 +170,7 @@ export function Navigation() {
   )
 }
 
-interface NavLinkProps {
-  children: React.ReactNode
-  href: string
-  isActive: boolean
-  className?: string
-}
 
-function NavLink({ children, href, isActive, className }: NavLinkProps) {
-  return (
-    <Link
-      href={href}
-      className={cn(
-        "text-sm font-montserrat transition-colors",
-        isActive ? "text-white" : "text-white/60 hover:text-white/80",
-        className
-      )}
-    >
-      {children}
-    </Link>
-  )
-}
 
 interface MobileNavLinkProps {
   children: React.ReactNode
