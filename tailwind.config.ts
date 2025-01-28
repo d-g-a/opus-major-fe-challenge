@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 const config: Config = {
     darkMode: ["class"],
@@ -64,7 +65,7 @@ const config: Config = {
   		keyframes: {
   			"accordion-down": {
   				from: {
-  					height: 0
+  					height: "0px"
   				},
   				to: {
   					height: "var(--radix-accordion-content-height)"
@@ -75,7 +76,7 @@ const config: Config = {
   					height: "var(--radix-accordion-content-height)"
   				},
   				to: {
-  					height: 0
+  					height: "0px"
   				}
   			}
   		},
@@ -85,7 +86,7 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animate],
 } satisfies Config;
 
 export default config;
