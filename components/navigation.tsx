@@ -59,14 +59,13 @@ export function Navigation() {
             </Link>
 
             <Image
-              src="/om_symbol.png"
+              src="/om_symbol.svg"
               alt="OM Symbol"
               width={8}
               height={8}
               className="rotate-45 group-hover:opacity-60 transition-opacity"
               style={{ filter: "brightness(0) invert(1)" }}
             />
-
             <Link 
               href="/dashboard/add-user" 
               onClick={() => handleClick2()}
@@ -79,11 +78,11 @@ export function Navigation() {
             </Link>
 
             <Image
-              src="/om_symbol.png"
+              src="/om_symbol.svg"
               alt="OM Symbol"
               width={8}
               height={8}
-              className="rotate-45 group-hover:opacity-60 transition-opacity "
+              className="rotate-45 group-hover:opacity-60 transition-opacity"
               style={{ filter: "brightness(0) invert(1)" }}
             />
 
@@ -123,22 +122,22 @@ export function Navigation() {
               User List
             </MobileNavLink>
             <Image
-              src="/om_symbol.png"
+              src="/om_symbol.svg"
               alt="OM Symbol"
               width={10}
               height={10}
-              className=""
+              className="rotate-45 group-hover:opacity-60 transition-opacity"
               style={{ filter: "brightness(0) invert(1)" }}
             />
             <MobileNavLink href="/dashboard/add-user" onClick={() => setMobileMenuOpen(false)}>
               Add User
             </MobileNavLink>
             <Image
-              src="/om_symbol.png"
+              src="/om_symbol.svg"
               alt="OM Symbol"
               width={10}
               height={10}
-              className=""
+              className="rotate-45 group-hover:opacity-60 transition-opacity"
               style={{ filter: "brightness(0) invert(1)" }}
             />
             <MobileNavLink href="/dashboard/user-chart" onClick={() => setMobileMenuOpen(false)}>
