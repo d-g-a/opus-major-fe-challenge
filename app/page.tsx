@@ -29,7 +29,7 @@ export default function LandingPage() {
         />
         <div className="flex flex-col gap-4">
           <Link 
-            href="/user-list" 
+            href="/dashboard/user-list" 
             className="w-full"
             onClick={handleClick1}
           >
@@ -41,7 +41,7 @@ export default function LandingPage() {
             </Button>
           </Link>
           <Link 
-            href="/add-user" 
+            href="/dashboard/add-user" 
             className="w-full"
             onClick={handleClick2}
           >
@@ -53,7 +53,7 @@ export default function LandingPage() {
             </Button>
           </Link>
           <Link 
-            href="/user-chart" 
+            href="/dashboard/user-chart" 
             className="w-full"
             onClick={handleClick3}
           >

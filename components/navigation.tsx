@@ -48,11 +48,11 @@ export function Navigation() {
             className="hidden md:flex items-center gap-8 font-bold group"
           >
             <Link 
-              href="/user-list" 
+              href="/dashboard/user-list" 
               onClick={() => handleClick1()}
               className={cn(
                 "text-sm font-montserrat group-hover:opacity-60 hover:!opacity-100 transition-opacity",
-                pathname === "/user-list" ? "text-white" : "text-white/60 hover:text-white/80"
+                pathname === "/dashboard/user-list" ? "text-white" : "text-white/60 hover:text-white/80"
               )}
             >
               User List
@@ -68,11 +68,11 @@ export function Navigation() {
             />
 
             <Link 
-              href="/add-user" 
+              href="/dashboard/add-user" 
               onClick={() => handleClick2()}
               className={cn(
                 "text-sm font-montserrat group-hover:opacity-60 hover:!opacity-100 transition-opacity",
-                pathname === "/add-user" ? "text-white" : "text-white/60 hover:text-white/80"
+                pathname === "/dashboard/add-user" ? "text-white" : "text-white/60 hover:text-white/80"
               )}
             >
               Add User
@@ -88,11 +88,11 @@ export function Navigation() {
             />
 
             <Link 
-              href="/user-chart" 
+              href="/dashboard/user-chart" 
               onClick={() => handleClick3()}
               className={cn(
                 "text-sm font-montserrat group-hover:opacity-60 hover:!opacity-100 transition-opacity",
-                pathname === "/user-chart" ? "text-white" : "text-white/60 hover:text-white/80"
+                pathname === "/dashboard/user-chart" ? "text-white" : "text-white/60 hover:text-white/80"
               )}
             >
               Users Chart
@@ -119,7 +119,7 @@ export function Navigation() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-[#10141D] z-50 flex flex-col items-center justify-center md:hidden">
           <div className="flex flex-col items-center gap-8">
-            <MobileNavLink href="/user-list" onClick={() => setMobileMenuOpen(false)}>
+            <MobileNavLink href="/dashboard/user-list" onClick={() => setMobileMenuOpen(false)}>
               User List
             </MobileNavLink>
             <Image
@@ -130,7 +130,7 @@ export function Navigation() {
               className=""
               style={{ filter: "brightness(0) invert(1)" }}
             />
-            <MobileNavLink href="/add-user" onClick={() => setMobileMenuOpen(false)}>
+            <MobileNavLink href="/dashboard/add-user" onClick={() => setMobileMenuOpen(false)}>
               Add User
             </MobileNavLink>
             <Image
@@ -141,7 +141,7 @@ export function Navigation() {
               className=""
               style={{ filter: "brightness(0) invert(1)" }}
             />
-            <MobileNavLink href="/user-chart" onClick={() => setMobileMenuOpen(false)}>
+            <MobileNavLink href="/dashboard/user-chart" onClick={() => setMobileMenuOpen(false)}>
               Users Chart
             </MobileNavLink>
           </div>
