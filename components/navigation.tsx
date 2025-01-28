@@ -59,7 +59,7 @@ export function Navigation() {
             </Link>
 
             <Image
-              src="/om_symbol.svg"
+              src="/om_symbol.png"
               alt="OM Symbol"
               width={8}
               height={8}
@@ -78,7 +78,7 @@ export function Navigation() {
             </Link>
 
             <Image
-              src="/om_symbol.svg"
+              src="/om_symbol.png"
               alt="OM Symbol"
               width={8}
               height={8}
@@ -122,7 +122,7 @@ export function Navigation() {
               User List
             </MobileNavLink>
             <Image
-              src="/om_symbol.svg"
+              src="/om_symbol.png"
               alt="OM Symbol"
               width={10}
               height={10}
@@ -133,7 +133,7 @@ export function Navigation() {
               Add User
             </MobileNavLink>
             <Image
-              src="/om_symbol.svg"
+              src="/om_symbol.png"
               alt="OM Symbol"
               width={10}
               height={10}
