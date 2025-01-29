@@ -8,9 +8,9 @@ Access the site in this url: https://opus-major-fe-challenge.vercel.app
 
 ## Things to know
 
-- Sounds play when you click on the page.
+- Sounds play when you click the three buttons on the navigation bar and landing page. Also when a new form is submitted.
 
-- As the user creation with the api provided is not very busy, I used a math.random to generate a random number of users created per minute.* 
+- As the user creation with the api provided is not very busy, I used a math.random to generate a random number of users created per minute.
 
 ## or run locally
 
